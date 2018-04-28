@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/ssure"
+    android:background="@android:color/black" 
+    android:keepScreenOn="true" >
+    <TableLayout
+		android:paddingTop="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:stretchColumns="*">
+        
+		<TableRow>
+	        <Button
+	            android:id="@+id/b_start"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Start" 
+	            android:textColor="#FFF"
+			    android:textSize="16sp"
+			    android:textStyle="bold" />
+	        
+	        <Button
+		        android:id="@+id/b_stop"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Stop" 
+		        android:textColor="#FFF"
+			    android:textSize="16sp"
+			    android:textStyle="bold" />
+	        <Button
+		        android:id="@+id/b_export"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Export" 
+		        android:textColor="#FFF"
+			    android:textSize="16sp"
+			    android:textStyle="bold" />
+        </TableRow>    
+		<TableRow>
+	        <Button
+	            android:id="@+id/b_accelerometer"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Accelerometer"
+	            android:textColor="#FFF"
+			    android:textSize="16sp"
+			    android:textStyle="bold" />
+	
+	        <Button
+	            android:id="@+id/b_gyroscope"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Gyroscope" 
+	            android:textColor="#FFF"
+			    android:textSize="16sp"
+			    android:textStyle="bold" />
+	        
+	        <Button
+		        android:id="@+id/b_gravity"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Gravity" 
+		        android:textColor="#FFF"
+			    android:textSize="16sp"
+			    android:textStyle="bold" />
+        </TableRow>
+        
+    </TableLayout>
+
+	<TextView
+	    android:id="@+id/t_accelerometer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:paddingTop="20dip"
+	    android:text="Accelerometer"
+	    android:textColor="#FFF"
+	    android:textSize="16sp"
+	    android:textStyle="bold" />
+
+	<TableLayout
+	    android:id="@+id/ta_accelerometer"
+		android:paddingTop="10dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*">
+		<TableRow>
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="X-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="Y-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="Z-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+		</TableRow>
+		<TableRow>
+
+			<TextView
+			    android:id="@+id/ax_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+			<TextView
+			    android:id="@+id/ay_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+			<TextView
+			    android:id="@+id/az_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+		</TableRow>
+	</TableLayout>
+
+	<TextView
+	    android:id="@+id/t_gyroscope"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:paddingTop="20dip"
+	    android:text="Gyroscope"
+	    android:textColor="#FFF"
+	    android:textSize="16sp"
+	    android:textStyle="bold" />
+
+	<TableLayout
+	    android:id="@+id/ta_gyroscope"
+		android:paddingTop="10dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*">
+		<TableRow>
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="X-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="Y-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="Z-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+		</TableRow>
+		<TableRow>
+
+			<TextView
+			    android:id="@+id/gx_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+			<TextView
+			    android:id="@+id/gy_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+			<TextView
+			    android:id="@+id/gz_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+		</TableRow>
+	</TableLayout>
+
+	<TextView
+	    android:id="@+id/t_gravity"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:paddingTop="20dip"
+	    android:text="Gravity"
+	    android:textColor="#FFF"
+	    android:textSize="16sp"
+	    android:textStyle="bold" />
+
+	<TableLayout
+	    android:id="@+id/ta_gravity"
+		android:paddingTop="10dip"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*">
+		<TableRow>
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="X-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="Y-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:text="Z-Axis"
+			    android:textColor="#FFF"
+			    android:textSize="14sp" />
+
+		</TableRow>
+		<TableRow>
+
+			<TextView
+			    android:id="@+id/rx_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+			<TextView
+			    android:id="@+id/ry_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+			<TextView
+			    android:id="@+id/rz_axis"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#FFF" />
+
+		</TableRow>
+	</TableLayout>
+</LinearLayout>
